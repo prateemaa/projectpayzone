@@ -1,0 +1,240 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+
+}
+
+/* Body Styles */
+body {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 130px;
+    height: 100vh;
+    padding: 0 2rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+}
+
+.sidebar:hover {
+    width: 270px;
+}
+
+/* Main Styles */
+.main {
+    height: 100%; 
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.main li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.main li:hover,
+.dashboard {
+    background: #e0e0e058;
+}
+
+.main a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main a span {
+    overflow: hidden;
+}
+
+.main a i {
+    font-size: 18px;
+}
+
+/* Main Content Styles */
+.main_content {
+    position: relative;
+    background: #ebe9e9;
+    width: calc(100% - 130px); /* Adjusted width based on sidebar width */
+    padding: 20px;
+}
+
+/* Header Styles */
+.header img {
+    width:50px;
+    height:50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 6px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header_title {
+    color: rgba(113, 99, 186, 255);
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Main Info Cards Styles */
+#main {
+    margin-left: 20px; /* Same as the width of the sidebar */
+    padding: 16px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.dashboard-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+  .icon{
+    color: #fff;
+    padding: 1rem;
+    height:60px;
+    width:60px;
+    text-align: center;
+    border-radius: 50%;
+    background: red;
+    margin-bottom: 10px;
+  }
+
+
+/* Color Styles */
+.light-green {
+    background: rgb(235, 254, 235);
+}
+
+.light-purple {
+    background: rgb(254, 226, 254);
+}
+
+.light-blue {
+    background: rgb(236, 236, 254);
+}
+
+.light-red {
+    background: rgb(254, 226, 254);
+}
+
+.dark-red {
+    background: red;
+}
+
+.dark-green {
+    background: green;
+}
+
+.dark-purple {
+    background: purple;
+}
+
+.dark-blue {
+    background: blue;
+}
+
+/* Table Styles */
+.main-title{
+    margin-bottom: 20px;
+}
+
+.tabular-wrappper {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.table-container {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    color: #fff;
+    background-color: rgba(113, 99, 186, 255);
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+}
+
+tbody {
+    background: #f2f2f2;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background: #fff;
+}
+
+tfoot {
+    background: rgba(113, 99, 186, 255);
+    font-weight: bold;
+    color: #fff;
+}
+
+tfoot td {
+    padding: 15px;
+}
+
+.table-container button {
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+
+.h1 {
+    text-align: center;
+    margin-left: 100px;
+}
+
+

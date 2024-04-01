@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+}
+.sidebar {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 130px;
+    height: 100vh;
+    padding: 0 2rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+}
+
+.sidebar:hover {
+    width: 270px;
+}
+
+/* Main Styles */
+.main {
+    height: 100%; 
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.main li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.main li:hover,
+.leave_request {
+    background: #e0e0e058;
+}
+
+.main a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main a span {
+    overflow: hidden;
+}
+
+.main a i {
+    font-size: 18px;
+}
+h2 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
